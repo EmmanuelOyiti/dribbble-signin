@@ -1,0 +1,297 @@
+/* SignIn.css */
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+
+h2{
+    color: #000;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+.container {
+    display: flex;
+    height: 70%;
+  }
+
+.content {
+    display: flex;
+    flex-direction: column;
+  flex-grow: 1; 
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures space between text and image */
+  align-items: flex-start;
+  width: 55%; /* Sidebar width */
+  height: 100vh; /* Full height */
+  background-color: #12121a;
+  padding-top: 40px;
+padding-right: 40px;
+padding-bottom: 0;
+padding-left: 40px; 
+  box-sizing: border-box;
+  position: relative; /* Ensures absolute positioning works */
+  background-color: #0c0c21;
+}
+
+.bottom-image {
+  width: calc(100% + 80px); /* Expands to match the sidebar width including padding */
+  height: 65%; /* Keeps aspect ratio */
+  object-fit: cover; /* Covers the entire available space */
+  align-self: center; /* Centers the image */
+  padding-top: 0;
+  margin-top: 0; /* Pushes it to the bottom */
+  margin-left: -40px; /* Counteracts sidebar padding */
+  margin-right: -40px;
+  margin-bottom: -40px;
+}
+
+  
+  .sidebar h2{
+    color: white;
+    margin-left: 0px;
+    font-weight: 400;
+  }
+
+  .sidebar a{
+    color:white;
+    
+  }
+
+  .sidebar span{
+    text-decoration: underline;
+  }
+
+  .wix-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+.form input, .google-btn, .signin-btn {
+    width: 100%; /* Ensure full width */
+}
+
+  
+  .card {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-right: 0;
+    margin-left: 10%;
+    min-width: 450px;
+    max-width: 500px;
+    min-height: auto; /* Remove fixed minimum height */
+    max-height: 100vh; /* Prevents overflow */
+  }
+  
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    line-height: 2;
+  }
+  
+  .google-btn img, text{
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .divider {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(179, 178, 178);
+    font-size: 14px;
+    width: 100%;
+}
+
+.divider hr {
+    flex-grow: 1; /* Expands to fill available space */
+    border: none; /* Remove default border */
+    height: 1px; /* Line thickness */
+    background-color: #f0eeee; /* Grey color */
+    margin: 0 30px; /* Space between text and lines */
+}
+  
+  .form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    line-height: 2;
+  }
+  
+  .form label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    padding-top: 20px;
+    background-color: white;
+    color: #000;
+    line-height: 2;
+    border-radius: 15px;
+  }
+  
+  .form input:focus {
+    border-color: #f7c1f0; /* Change border color */
+    background-color: white; /* Change background color */
+    outline: none; /* Removes default browser outline */
+}
+
+.form input:hover{
+  box-shadow: 0 0 5px rgb(247, 193, 240); /* Adds a subtle glow effect */
+}
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+
+}
+
+  .options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-left: auto;
+  }
+  
+    .options a {
+        color: #000;
+        font-weight: 400;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    .password_input{
+      margin-bottom: 15px;
+    }
+
+  .signin-btn {
+    background-color: #12121a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 2;
+    width: 105%;
+    margin-top: 20px;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    color: gray;
+  }
+  
+  .signup-link a {
+    color: #12121a;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: white; /* Ensure full white background */
+        overflow: hidden; /* Prevent extra scrolling */
+    }
+    .sidebar {
+        display: none; /* Hide the sidebar */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 90%;
+        min-height: 100;
+        background-color: white; /* Remove any leftover dark background */
+        min-height: 100%; /* Ensures full screen height */
+    width: 100%;
+    }
+
+    .card {
+        width: 100%; /* Make the card take most of the screen */
+        min-height: 130vh; 
+        max-width: 400px; /* Keep it from being too wide */
+        padding: 30px;
+        padding-right: 6%;
+        margin: 0 auto; /* Ensure proper centering */
+        background-color: white; /* Ensure it matches */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: white; /* Ensure full white background */
+      overflow: hidden; /* Prevent extra scrolling */
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      width: 100%;
+  }
+  .sidebar {
+      display: none; /* Hide the sidebar */
+  }
+
+  .container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      width: 100%;
+
+      background-color: white; /* Remove any leftover dark background */
+  width: 100%;
+  }
+
+  .card {
+      width: 100%; /* Make the card take most of the screen */
+      min-height: 100vh; 
+      max-width: 700px; /* Keep it from being too wide */
+      padding: 30px;
+      padding-right: 6%;
+      margin: 0 auto; /* Ensure proper centering */
+      background-color: white; /* Ensure it matches */
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+  }
+}
