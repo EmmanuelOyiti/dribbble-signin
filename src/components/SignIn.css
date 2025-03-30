@@ -13,6 +13,8 @@ h2{
     align-self: flex-start;
     margin-left: 5%;
     margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 25px;
 }
 .container {
     display: flex;
@@ -32,7 +34,7 @@ h2{
   flex-direction: column;
   justify-content: space-between; /* Ensures space between text and image */
   align-items: flex-start;
-  width: 55%; /* Sidebar width */
+  min-width: 35%; /* Sidebar width */
   height: 100vh; /* Full height */
   background-color: #12121a;
   padding-top: 40px;
@@ -65,7 +67,7 @@ padding-left: 40px;
 
   .sidebar a{
     color:white;
-    
+    padding-bottom: 50px;
   }
 
   .sidebar span{
@@ -74,13 +76,14 @@ padding-left: 40px;
 
   .wix-logo {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 20px;
     font-family: "Wix Madefor Display", sans-serif;
+    padding-top: 30px;
   }
 
   .wix-logo span{
-    font-weight: 800;
+    font-weight: bolder;
     text-decoration: none;
   }
 
@@ -103,7 +106,10 @@ padding-left: 40px;
     min-height: auto; /* Remove fixed minimum height */
     max-height: 100vh; /* Prevents overflow */
   }
-  
+  .card h2{
+    font-weight: 700;
+    font: bold 24px / 29px "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
   .google-btn {
     display: flex;
     align-items: center;
@@ -117,6 +123,8 @@ padding-left: 40px;
     cursor: pointer;
     color: black;
     line-height: 2;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
   }
   
   .google-btn img, text{
@@ -154,6 +162,7 @@ padding-left: 40px;
   .form label {
     font-weight: bold;
     margin-top: 10px;
+    font: bold 15px / 24px "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   
   .form input {
@@ -197,6 +206,7 @@ padding-left: 40px;
         font-weight: 400;
         font-size: 14px;
         text-decoration: underline;
+        font: normal 14px / 20px "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .password_input{
@@ -225,6 +235,7 @@ padding-left: 40px;
     color: #12121a;
     font-weight: 400;
     text-decoration: underline;
+    font: normal 14px / 20px "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   @media only screen and (max-width: 600px) {
