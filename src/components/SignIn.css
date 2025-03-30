@@ -23,7 +23,9 @@ h2{
     display: flex;
     flex-direction: column;
   flex-grow: 1; 
+  font-family: "Wix Madefor Display", sans-serif;
 }
+
 
 .sidebar {
   display: flex;
@@ -72,8 +74,14 @@ padding-left: 40px;
 
   .wix-logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 20px;
+    font-family: "Wix Madefor Display", sans-serif;
+  }
+
+  .wix-logo span{
+    font-weight: 800;
+    text-decoration: none;
   }
 
 .form input, .google-btn, .signin-btn {

@@ -6,7 +6,7 @@ const SignIn = () => {
     <div className="container">
         <div className="sidebar">
     <div className="content">
-      <div className="wix-logo">WIX STUDIO</div>
+      <div className="wix-logo"><span>WIX</span> STUDIO</div>
       <h2>The new Figma to Wix Studio plugin</h2>
       <a href="#"><span>Learn more</span> →</a>
     </div>
